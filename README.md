@@ -16,6 +16,7 @@ This is a simple Python terminal game where the player tries to guess a number r
 - The computer randomly selects a number between 1 and 1000, and the player must guess it.
 - After each guess, the computer provides a hint: **"Up!"** if the guess is too low, or **"Down!"** if it’s too high.
 - The player has up to 20 attempts to guess the correct number. If they fail, the game ends.
+- The answer will never be a floating-point number (i.e., no decimals).
 
 ---
 

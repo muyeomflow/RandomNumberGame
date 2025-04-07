@@ -23,7 +23,7 @@ while True:
                 
                 if guess > 1000:
                     
-                    print("Out of range of numbers. Please re-enter")
+                    print(f"Out of range of numbers. Please re-enter. You guessed it in {attempts} attempts.")
                     
                 else:
                     
@@ -33,15 +33,16 @@ while True:
                 
                 if guess < 1:
                     
-                    print("Out of range of numbers. Please re-enter")
+                    print(f"Out of range of numbers. Please re-enter. You guessed it in {attempts} attempts.")
                     
                 else:
                     
-                    print("Up! Number of attempts : {attempts} attempts.")
+                    print(f"Up! Number of attempts : {attempts} attempts.")
 
         except ValueError: 
             
-            print("Invalid input, please enter a number") # Prevent incorrect input from increasing the number of attempts
+            attempts += 1
+            print(f"Invalid input, please enter a number. You guessed it in {attempts} attempts.")
             continue
             
     else:
